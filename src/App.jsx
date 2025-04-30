@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Loop from "./arrayloop"
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
        <hr/>
        <h4 style={{textDecoration:"underline"}} >Understand correctly <b style={{color:"blue"}}> State/hook in jsx,</b> Now lets go to learn another concept</h4>
 
+<Loop />
 
 
       </div>
