@@ -33,6 +33,8 @@ function App() {
 
        </select>
        <h4>Selected City: {city}</h4>
+       <hr/>
+       <h4 style={{textDecoration:"underline"}} >Understand correctly <b style={{color:"blue"}}> State/hook in jsx,</b> Now lets go to learn another concept</h4>
 
 
 
