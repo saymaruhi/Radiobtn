@@ -1,7 +1,7 @@
 function Loop (){
     return(
         <div>
-            <h2>Array Loop in jsx</h2>
+            <h2 style={{ color:"blue"}}>Array Loop in jsx</h2>
         </div>
     )
 }

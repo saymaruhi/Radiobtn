@@ -26,7 +26,7 @@ function App() {
       <hr/>
     
       <h2>Select City</h2>
-      <select onChange={(event)=> setcity(event.target.value)} defaultValue={"Patna"}>
+      <select style={{color:"blue"}} onChange={(event)=> setcity(event.target.value)} defaultValue={"Patna"}>
         <option value= "Delhi" >Delhi</option>
         <option value= "Noide" >Noide</option>
         <option value= "Patna" >Patna</option>
