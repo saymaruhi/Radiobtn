@@ -1,50 +1,65 @@
-import { useState } from "react"
-import Loop from "./arrayloop"
-
+import { useState } from "react";
+import Loop from "./arrayloop";
+import User from "./user";
 
 function App() {
-  const[gender,setgender]= useState("male")
-  const[city,setcity]= useState("")
-  
+  const [gender, setgender] = useState("male");
+  const [city, setcity] = useState("");
 
   return (
-    
-      <div>
-       <h2 style={{color:"blue"}}>Radio Button</h2>
+    <div>
+      <h2 style={{ color: "blue" }}>Radio Button</h2>
 
       <h3>Select Gender</h3>
 
-      <input type="radio" onChange={(event)=> setgender(event.target.value)} name= "gender" id= "male" value= {"Male"} checked={gender=="Male"}  />
+      <input
+        type="radio"
+        onChange={(event) => setgender(event.target.value)}
+        name="gender"
+        id="male"
+        value={"Male"}
+        checked={gender == "Male"}
+      />
 
-      <label htmlFor= "male">Male</label>
+      <label htmlFor="male">Male</label>
 
-      <input type="radio" onChange={(event)=> setgender(event.target.value)} name= "gender" id= "female" value= {"Female"} checked= {gender=="Female"} />
+      <input
+        type="radio"
+        onChange={(event) => setgender(event.target.value)}
+        name="gender"
+        id="female"
+        value={"Female"}
+        checked={gender == "Female"}
+      />
 
-      <label htmlFor= "female">Female</label>
+      <label htmlFor="female">Female</label>
 
       <h4>Selected Gender: {gender}</h4>
-      <hr/>
-    
+      <hr />
+
       <h2>Select City</h2>
-      <select style={{color:"blue"}} onChange={(event)=> setcity(event.target.value)} defaultValue={"Patna"}>
-        <option value= "Delhi" >Delhi</option>
-        <option value= "Noide" >Noide</option>
-        <option value= "Patna" >Patna</option>
-        <option value= "Kolkata">Kolkata</option>
+      <select
+        style={{ color: "blue" }}
+        onChange={(event) => setcity(event.target.value)}
+        defaultValue={"Patna"}
+      >
+        <option value="Delhi">Delhi</option>
+        <option value="Noide">Noide</option>
+        <option value="Patna">Patna</option>
+        <option value="Kolkata">Kolkata</option>
+      </select>
+      <h4>Selected City: {city}</h4>
+      <hr />
+      <h4 style={{ textDecoration: "underline" }}>
+        Understand correctly{" "}
+        <b style={{ color: "blue" }}> State/hook in jsx,</b> Now lets go to
+        learn another concept
+      </h4>
 
-       </select>
-       <h4>Selected City: {city}</h4>
-       <hr/>
-       <h4 style={{textDecoration:"underline"}} >Understand correctly <b style={{color:"blue"}}> State/hook in jsx,</b> Now lets go to learn another concept</h4>
-
-<Loop />
-
-
-      </div>
-
-     
-    
-  )
+      <Loop />
+      <User/>
+    </div>
+  );
 }
 
-export default App
+export default App;
