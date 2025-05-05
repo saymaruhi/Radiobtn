@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Loop from "./arrayloop";
+import User from "./user";
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
       </h4>
 
       <Loop />
+      <User />
       
     </div>
   );
