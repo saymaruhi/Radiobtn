@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Loop from "./arrayloop";
-import User from "./user";
+
 
 function App() {
   const [gender, setgender] = useState("male");
@@ -57,7 +57,7 @@ function App() {
       </h4>
 
       <Loop />
-      <User/>
+      
     </div>
   );
 }
