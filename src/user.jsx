@@ -1,3 +1,5 @@
+import Userdata from "./userdata";
+
 function User() {
   const student = [
     {
@@ -14,26 +16,12 @@ function User() {
 
   return (
     <div>
-      <h3>Component Loop</h3>
-      <table border={1}>
-        <thead>
-          <tr>
-            <td>Name</td>
-            <td>School</td>
-            <td>Degree</td>
-          </tr>
-        </thead>
-        <tbody>
-          <td>Sayma</td>
-          <td>A.N.College</td>
-          <td>M.B.A</td>
-        </tbody>
-        <tbody>
-        <td>Sajid</td>
-          <td>SMU</td>
-          <td>M.C.A</td>
-        </tbody>
-      </table>
+      <h3 style={{ color: "blue" }}>Reuse Component in Loop</h3>
+      {student.map((data) => (
+        <div key={User.id}>
+         <Userdata  user={data}/>
+        </div>
+      ))}
     </div>
   );
 }

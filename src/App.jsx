@@ -3,6 +3,7 @@ import Loop from "./arrayloop";
 import User from "./user";
 
 
+
 function App() {
   const [gender, setgender] = useState("male");
   const [city, setcity] = useState("");
@@ -60,8 +61,9 @@ function App() {
       <Loop />
       <User />
       
+      
     </div>
   );
-}
+} 
 
 export default App;
