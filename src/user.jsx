@@ -1,5 +1,6 @@
 import Userdata from "./userdata";
 
+
 function User() {
   const student = [
     {
@@ -22,7 +23,12 @@ function User() {
          <Userdata  user={data}/>
         </div>
       ))}
+
     </div>
   );
 }
+
+
+
+
 export default User;
